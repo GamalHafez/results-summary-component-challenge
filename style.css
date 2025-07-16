@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "Hanken";
+  src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+  font-weight: lighter;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  width: 400px;
+  margin: 200px auto;
+  background-color: hsl(221, 100%, 96%);
+  line-height: 1.4;
+  font-family: "Hanken";
+}
+
+/* Result bolck */
+
+.result-block {
+  position: absolute;
+  left: -140px;
+  color: #fff;
+  background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  width: 270px;
+  height: 400px;
+  padding: 40px 50px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.result-title {
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: hsl(241, 100%, 89%);
+}
+
+.result-score {
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.score-number {
+  color: hsl(0, 0%, 100%);
+  font-size: 70px;
+  line-height: 1.1;
+}
+
+.score-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 8px;
+  color: hsla(241, 100%, 89%, 0.482);
+}
+
+.score-rate {
+  color: hsl(0, 0%, 100%);
+  font-size: 30px;
+}
+
+.score-summary {
+  margin-top: 14px;
+  font-size: 17px;
+  color: hsl(241, 100%, 89%);
+}
+
+/* Summary block */
+
+.summary-block {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: 300px;
+  height: 400px;
+  padding: 40px 10px 40px 65px;
+  margin-left: 200px;
+}
+
+.summary-title {
+  font-size: 28px;
+  color: hsl(224, 30%, 27%);
+}
+
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 20px;
+  margin: 30px 0px 30px 0px;
+}
+
+.summary-table td,
+.summary-table th {
+  padding: 15px 20px;
+}
+
+.reaction {
+  color: hsl(0, 100%, 67%);
+}
+
+.reaction::before {
+  content: url(assets/images/icon-reaction.svg);
+  padding-right: 8px;
+}
+
+.reaction-row:hover {
+  background-color: hsla(0, 44%, 83%, 0.357);
+}
+
+.memory {
+  color: hsl(39, 100%, 56%);
+}
+
+.memory::before {
+  content: url(assets/images/icon-memory.svg);
+  padding-right: 8px;
+}
+
+.memory-row:hover {
+  background-color: hsla(38, 59%, 80%, 0.355);
+}
+
+.verbal {
+  color: hsl(166, 100%, 37%);
+}
+
+.verbal::before {
+  content: url(assets/images/icon-verbal.svg);
+  padding-right: 8px;
+}
+
+.verbal-row:hover {
+  background-color: hsla(165, 54%, 84%, 0.357);
+}
+
+.visual {
+  color: hsl(234, 85%, 45%);
+}
+
+.visual::before {
+  content: url(assets/images/icon-visual.svg);
+  padding-right: 8px;
+}
+
+.visual-row:hover {
+  background-color: hsla(235, 68%, 81%, 0.355);
+}
+
+.summary-score {
+  color: hsl(224, 30%, 27%);
+  font-size: 20px;
+}
+
+.percentage {
+  padding-left: 8px;
+  font-weight: bold;
+  color: hsla(224, 30%, 27%, 0.857);
+}
+
+.continue-button {
+  font-family: inherit;
+  font-size: 19px;
+  font-weight: bold;
+  color: #fff;
+  background-color: hsl(224, 30%, 27%);
+  border: none;
+  border-radius: 30px;
+  padding: 20px 90px;
+  margin-left: 12px;
+}
+
+.continue-button:hover {
+  background-color: hsla(224, 30%, 27%, 0.857);
+  transform: scale(1.02);
+}
+
+.footer {
+  padding-top: 80px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.frontend-mentor-link:link,
+.frontend-mentor-link:visited,
+.coder {
+  font-size: 19px;
+  color: hsla(256, 72%, 46%, 1);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.frontend-mentor-link:hover,
+.frontend-mentor-link:active {
+  color: hsl(252, 100%, 67%);
+}
